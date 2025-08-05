@@ -32,16 +32,18 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 8px rgb(0 0 0 / 0.7);
       transition: transform 0.2s ease;
+      height: 100%;
     }
-    .job-title{
+     .job-title{
       background: #4b6cb7;
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0 2px 8px rgb(0 0 0 / 0.7);
       transition: transform 0.2s ease;
-    }
-    
+      }
+
+	
     .job-card:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 16px rgb(75 108 183 / 0.8);
@@ -62,17 +64,50 @@
       background-color: #39559f;
       border-color: #39559f;
     }
+    .job-grid {
+      margin-bottom: 15px;
+    }
+    /* Improved mobile responsiveness */
+    @media (max-width: 768px) {
+      .job-card {
+        margin-bottom: 15px;
+      }
+      .hero-section {
+        padding: 40px 15px;
+      }
+      h1.display-4 {
+        font-size: 2.5rem;
+      }
+      .job-grid .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+    @media (max-width: 576px) {
+      .job-card {
+        padding: 15px;
+      }
+      h5 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container"><b>
-      <a class="navbar-brand" href="#">Job_Portal</a></b>
+    <div class="container">
+      <a class="navbar-brand" href="#">JobPortal</a>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -82,7 +117,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Employers</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-          <li class="nav-item"><a class="btn btn-primary ms-3" href="#">Register</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-3 mt-2 mt-lg-0" href="#">Register</a></li>
         </ul>
       </div>
     </div>
@@ -97,36 +132,58 @@
   </section>
 
   <section class="container my-5">
-    <h2 class="mb-4">Featured Jobs</h2>
-
-    <div class="job-card">
-      <div class="job-title">
-      <h5>Front-End Developer</h5>
-      <p>Company: Tech Solutions Inc.</p>
+    <h2 class="mb-4 text-center">Featured Jobs</h2>
+    
+    <div class="row job-grid gx-2 gx-md-3 gy-3">
+      <!-- First Row -->
+      <div class="col-12 col-md-6">
+        <div class="job-card">
+	<div class="job-title">
+          <h5>Front-End Developer</h5>
+          <p>Company: Tech Solutions Inc.</p>
+	</div>
+          <p>Location: Kathmandu, Nepal</p>
+          <p>Skills: HTML, CSS, JavaScript, React</p>
+          <a href="#" class="btn btn-sm btn-primary mt-2">Apply Now</a>
+        </div>
       </div>
-      <p>Location: Kathmandu, Nepal</p>
-      <p>Skills: HTML, CSS, JavaScript, React</p>
-      <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
-    </div>
-
-    <div class="job-card">
-      <div class="job-title">
-      <h5>Backend Developer</h5>
-      <p>Company: SoftWorks</p>
+      
+      <div class="col-12 col-md-6">
+        <div class="job-card">
+	<div class="job-title">
+          <h5>Backend Developer</h5>
+          <p>Company: SoftWorks</p>
+	</div>
+          <p>Location: Remote</p>
+          <p>Skills: Node.js, Express, MongoDB</p>
+          <a href="#" class="btn btn-sm btn-primary mt-2">Apply Now</a>
+        </div>
       </div>
-      <p>Location: Remote</p>
-      <p>Skills: Node.js, Express, MongoDB</p>
-      <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
-    </div>
-
-    <div class="job-card">
-      <div class="job-title">
-      <h5>Graphic Designer</h5>
-      <p>Company: Creative Studio</p>
-      <div>
-      <p>Location: Pokhara, Nepal</p>
-      <p>Skills: Adobe Photoshop, Illustrator</p>
-      <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
+    
+      <!-- Second Row -->
+      <div class="col-12 col-md-6">
+        <div class="job-card">
+	<div class="job-title">
+          <h5>UX/UI Designer</h5>
+          <p>Company: Digital Creations</p>
+	</div>
+          <p>Location: Lalitpur, Nepal</p>
+          <p>Skills: Figma, Adobe XD, User Research</p>
+          <a href="#" class="btn btn-sm btn-primary mt-2">Apply Now</a>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6">
+        <div class="job-card">
+	<div class="job-title">
+          <h5>DevOps Engineer</h5>
+          <p>Company: Cloud Systems</p>
+	</div>
+          <p>Location: Remote</p>
+          <p>Skills: AWS, Docker, Kubernetes</p>
+          <a href="#" class="btn btn-sm btn-primary mt-2">Apply Now</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -137,5 +194,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
