@@ -73,6 +73,31 @@ h2 {
   transition: 0.3s ease;
 }
 
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.remember {
+  display: flex;
+  align-items: center ;
+  gap: 5px;
+  color: #555;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.remember input {
+  accent-color: #6a5af9;
+  width: 20px;
+  height: 20px;
+  
+}
+
+
 .input-group input:focus + label,
 .input-group input:valid + label {
   top: -20px;
@@ -95,6 +120,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-bottom: 50px;
 }
 
 button:hover {

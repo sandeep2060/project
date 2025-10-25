@@ -23,6 +23,16 @@ function App() {
           <input type="password" required />
           <label>Password</label>
         </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Remember Me
+          </label>
+        </div>
+
+
         <button type="submit">Sign In</button>
       </form>
     </div>
