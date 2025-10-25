@@ -18,14 +18,14 @@ body {
   text-align: center;
   width: 100%;
   max-width: 400px;
-  padding: 15px;
+  padding: 6px;
 }
 
 .card {
   background: #fff;
   border-radius: 30px;
   box-shadow: 0 30px 8px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
+  padding: 10px 20px;
 }
 
 .illustration {
@@ -35,7 +35,7 @@ body {
 }
 
 .illustration img {
-  width: 250px;
+  width: 350px;
 }
 
 h2 {
@@ -46,12 +46,12 @@ h2 {
 
 .input-group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .input-group input {
   width: 100%;
-  padding: 12px 15px;
+  padding: 15px 15px;
   border: 2px solid #dcdcff;
   border-radius: 10px;
   outline: none;
